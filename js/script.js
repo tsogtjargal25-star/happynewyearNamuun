@@ -2076,13 +2076,12 @@ class Shell {
 			throw new Error("Буруу салютын өнгө. Энэ нь тэмдэгт мөр эсвэл тэмдэгт мөрийн массив байх ёстой, харин дараах утгыг авсан: " + this.color);
 		}
 
-		if (!this.disableWordd && store.state.config.wordShell) {
-			if (Math.random() < 0.1) {
-				if (Math.random() < 0.5) {
-					createWordBurst(randomWord(), dotStarFactory, x, y);
-				}
-			}
-		}
+	if (!this.disableWord && store.state.config.wordShell) {
+  if (Math.random() < 0.3) {
+    createWordBurst(randomWord(), dotStarFactory, x, y);
+  }
+}
+
 
 		if (this.pistil) {
 			const innerShell = new Shell({
