@@ -60,7 +60,7 @@ const trailsStage = new Stage("trails-canvas");
 const mainStage = new Stage("main-canvas");
 const stages = [trailsStage, mainStage];
 
-const randomWords = ["Happy New Year Namuun💖","Only For You"];
+const randomWords = ["Happy New Year Namuun💖","Only For You💐"];
 const wordDotsMap = {};
 randomWords.forEach((word) => {
 	wordDotsMap[word] = MyMath.literalLattice(word, 3, "Gabriola,", "90px");
